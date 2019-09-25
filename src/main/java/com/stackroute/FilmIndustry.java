@@ -15,5 +15,10 @@ public class FilmIndustry {
         Movie movie = factory.getBean(Movie.class);
         movie.getDisplay();
 
+        Movie movie2 = factory.getBean(Movie.class);
+        movie.getDisplay();
+
+        System.out.println(movie==movie2);
+
     }
 }
