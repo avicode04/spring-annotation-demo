@@ -18,17 +18,17 @@ public class Actor {
         System.out.println("Actor Construstor");
     }
 
-//    public void setName(String name) {
-//        this.name = name;
-//    }
-//
-//    public void setGender(String gender) {
-//        this.gender = gender;
-//    }
-//
-//    public void setAge(int age) {
-//        this.age = age;
-//    }
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
 
     public void display(){
         System.out.println("Actor on Display..");

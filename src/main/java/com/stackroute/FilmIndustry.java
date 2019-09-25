@@ -12,11 +12,11 @@ public class FilmIndustry {
     public static void main(String args[]){
         ApplicationContext factory = new AnnotationConfigApplicationContext(AppConfig.class);
         System.out.println("Config file loaded..");
-        Movie movie = factory.getBean(Movie.class);
+        Movie movie = factory.getBean("movie1",Movie.class);
         movie.getDisplay();
 
-        Movie movie2 = factory.getBean(Movie.class);
-        movie.getDisplay();
+        Movie movie2 = factory.getBean("movie2",Movie.class);
+        movie2.getDisplay();
 
         System.out.println(movie==movie2);
 
