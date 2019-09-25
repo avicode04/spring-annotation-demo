@@ -1,5 +1,6 @@
 package com.stackroute;
 
+import com.stackroute.demo.BeanLifecycleDemoBranch;
 import com.stackroute.domain.Actor;
 import com.stackroute.domain.Movie;
 import org.springframework.beans.factory.BeanFactory;
@@ -9,9 +10,14 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 public class FilmIndustry {
 
-    public static void main(String args[]){
+    public static void main(String args[]) throws Exception {
         ApplicationContext factory = new AnnotationConfigApplicationContext(AppConfig.class);
         System.out.println("Config file loaded..");
+
+        BeanLifecycleDemoBranch life = factory.getBean(BeanLifecycleDemoBranch.class);
+//        life.afterPropertiesSet();
+//        life.destroy();
+
         Movie movie = factory.getBean("movie1",Movie.class);
         movie.getDisplay();
 

@@ -1,5 +1,6 @@
 package com.stackroute;
 
+import com.stackroute.demo.BeanLifecycleDemoBranch;
 import com.stackroute.domain.Actor;
 import com.stackroute.domain.Movie;
 import org.springframework.context.annotation.Bean;
@@ -8,6 +9,13 @@ import org.springframework.context.annotation.Scope;
 
 @Configuration
 public class AppConfig {
+
+    @Bean(initMethod = "customInit",destroyMethod = "customDestroy")
+    public BeanLifecycleDemoBranch getLife(){
+        BeanLifecycleDemoBranch life = new BeanLifecycleDemoBranch();
+        return life;
+    }
+
     @Bean(value="movie1")
     public Movie getMovie1(){
         Movie movie = new Movie(getActor1());
