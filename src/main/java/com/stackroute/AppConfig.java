@@ -1,11 +1,12 @@
 package com.stackroute;
 
 import com.stackroute.demo.BeanLifecycleDemoBranch;
+import com.stackroute.demo.BeanProcessorDemo;
 import com.stackroute.domain.Actor;
 import com.stackroute.domain.Movie;
+import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Scope;
 
 @Configuration
 public class AppConfig {
@@ -44,6 +45,12 @@ public class AppConfig {
 //        actor.setGender("M");
 //        actor.setName("Shahrukh");
         return actor2;
+    }
+
+    @Bean
+    public BeanPostProcessor getBeanPost(){
+        BeanPostProcessor beanPostProcessor=new BeanProcessorDemo();
+        return beanPostProcessor;
     }
 
 }

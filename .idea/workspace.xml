@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19de398e-c28e-4c33-a1d2-ba54e864a850" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/stackroute/demo/BeanLifecycleDemoBranch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/stackroute/demo/BeanProcessorDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/stackroute/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackroute/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stackroute/FilmIndustry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackroute/FilmIndustry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/stackroute/AppConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/stackroute/AppConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/stackroute/FilmIndustry.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/stackroute/FilmIndustry.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +74,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
